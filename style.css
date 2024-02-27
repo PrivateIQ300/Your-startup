@@ -22,8 +22,11 @@
 .content{
     max-width: 1280px;
 }
-.header__drop-content{
+.header__gamburger, .header__drop-content{
     display: none;
+}
+.header__drop-content{
+    
     position: absolute;
     z-index: 1;
     background-color: #f9f9f9;
@@ -306,5 +309,9 @@ footer, .footer__underground{
     }
     .header__links, .header__phone, .header__button, .support__image{
         display: none;
+    }
+    .header__gamburger{
+        display: flex;
+        margin-left: auto;
     }
  }
