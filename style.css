@@ -297,3 +297,11 @@ footer, .footer__underground{
 .footer__company, .footer__year, .footer__phone{
     margin-right: 60px;
 }
+@media(max-width: 768px) {
+    .content{
+       width: 300px;
+    }
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+ }
