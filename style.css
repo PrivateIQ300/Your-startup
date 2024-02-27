@@ -12,6 +12,7 @@
 }
 .main{
     max-width: 1440px;
+    padding: 0 15px;
 }
 .main, .content, .center{
     margin-left: auto;
@@ -19,6 +20,7 @@
 .application__text, .main, .content, .center, .footer__mail-text{
     margin-right: auto;
 }
+
 .content{
     max-width: 1280px;
 }
@@ -105,6 +107,9 @@ h1{
 .qualities__description, .subscribe__title{
     margin-bottom: 10px;
 }
+.subscribe__title{
+    word-break: break-all;
+}
 .subscribe__quality, .support__contents{
     margin-bottom: 20px;
 }
@@ -172,6 +177,13 @@ h3{
 }
 .technology__description{
     margin-left: 68px;
+}
+.technology__technique img{
+    filter: grayscale(100%);
+    transition: filter .3s ease;
+}
+.technology__technique:hover img{
+    filter:grayscale(0%);
 }
 .technology__technique, .technologies__table-of-contents, .opportunity__table-of-contents, .subscribe__table-of-contents, .projects__table-of-contents{
     margin-bottom: 50px;
@@ -313,5 +325,8 @@ footer, .footer__underground{
     .header__gamburger{
         display: flex;
         margin-left: auto;
+    }
+    h1{
+        font-size: 40px;
     }
  }
