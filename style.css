@@ -297,11 +297,14 @@ footer, .footer__underground{
 .footer__company, .footer__year, .footer__phone{
     margin-right: 60px;
 }
-@media(max-width: 768px) {
+@media(max-width: 1000px) {
     .content{
        width: 300px;
     }
     .wrapper{
         grid-template-columns: 1fr;
+    }
+    .header__links, .header__phone, .header__button, .support__image{
+        display: none;
     }
  }
