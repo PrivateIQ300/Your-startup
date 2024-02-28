@@ -24,9 +24,6 @@
 .content{
     max-width: 1280px;
 }
-.header__gamburger, .header__drop-content{
-    display: none;
-}
 .header__drop-content{
     
     position: absolute;
@@ -204,8 +201,11 @@ h3{
     border-top: 1px solid #BABDBF;
     margin-left: 20px;
 }
-.opportunity__number-text, .subscribe__quality_border, .wrapper__border-top, .footer__contact{
+.opportunity__number-text, .subscribe__quality_border, .wrapper__col_border-top, .footer__contact{
     margin-right: 20px;
+}
+.wrapper__border_without-margin{
+    margin-right: 0px; 
 }
 .subscribe__table-of-contents-text, .projects__title{
     font-size: 28px;
@@ -249,7 +249,7 @@ h3{
 .subscribe__price-text_blue-color{
     color: #5759F3;
 }
-.wrapper__border-top, .subscribe__price_bord-black, .wrapper__border-top-without-margin{
+.wrapper__col_border-top, .subscribe__price_bord-black{
     border-top: 1px solid #263238;
 }
 .projects__button{
@@ -312,6 +312,9 @@ footer, .footer__underground{
 .footer__company, .footer__year, .footer__phone{
     margin-right: 60px;
 }
+.header__gamburger, .header__drop-content , .wrapper__col_bord-4, .wrapper__col_bord-3{
+    display: none;
+}
 @media(max-width: 1000px) {
     .content{
        width: 300px;
@@ -319,14 +322,45 @@ footer, .footer__underground{
     .wrapper{
         grid-template-columns: 1fr;
     }
-    .header__links, .header__phone, .header__button, .support__image{
+    .header__links, .header__phone, .header__button, .support__image, .wrapper__border_without-margin{
         display: none;
     }
-    .header__gamburger{
+    .header__gamburger, .wrapper__col_bord-4, .wrapper__col_bord-3{
         display: flex;
+    }
+    .header__gamburger{
         margin-left: auto;
+    }
+    .wrapper__col_bord-4, .wrapper__col_bord-3{
+        flex-direction: column;
     }
     h1{
         font-size: 40px;
+    }
+    .support__text{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    .qualities__text, .opportunity__text, .subscribe__time-text{
+        font-size: 16px;
+    }
+    .technologies, .qualities, .opportunity, .subscribe, .projects{
+        margin-top: 100px;
+    }
+    .wrapper__col_border-b-r, .wrapper__col_border-b{
+        border-bottom: none;
+        border-right: 1px solid #263238;
+    }
+    .wrapper__col_bord-2{
+        grid-row: 3;
+    }
+    .wrapper__col_bord-3{
+        grid-row: 5;
+    }
+    .wrapper__col_bord-4{
+        grid-row: 7;
     }
  }
