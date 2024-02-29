@@ -30,7 +30,9 @@
     z-index: 1;
     background-color: #f9f9f9;
     left:33%;
-    white-space: nowrap;
+}
+.header__drop-content, .subscribe__toc{
+    white-space: nowrap; 
 }
 .main, .application__row, .footer__contanct, .footer__mail, .footer__underground, .projects__foto,.wrapper__col, .subscribe__quality, .content, .subscribe__table-of-contents, .opportunity__number, .technology__description, .technology__technique, .row, .show, .header__links, .header__dropper:hover .header__drop-content, .support__description{
     display: flex;
@@ -103,8 +105,8 @@ h1{
 }
 .qualities__description, .subscribe__title{
     margin-bottom: 10px;
-}
-.subscribe__title{
+} 
+.qualities__title{
     word-break: break-all;
 }
 .subscribe__quality, .support__contents{
@@ -156,7 +158,7 @@ h3{
 .wrapper__col_border-b, .wrapper__col_border-b-r{
     border-bottom: 1px solid #263238;
 }
-.wrapper__col, .technology__technique{
+.wrapper__col, .technology__techniqueб .projects__button{
     padding-right: 20px;
 }
 .wrapper_second-row{
@@ -211,7 +213,6 @@ h3{
     font-size: 28px;
 }
 .subscribe__toc{
-    white-space: nowrap;
     margin-right: 250px;
 }
 .wrapper__col_border{
@@ -254,7 +255,6 @@ h3{
 }
 .projects__button{
     border-radius: 5px;
-    padding-right: 20px;
     padding-left: 20px;
     border: none;
     padding-top: 5px;
@@ -312,10 +312,11 @@ footer, .footer__underground{
 .footer__company, .footer__year, .footer__phone{
     margin-right: 60px;
 }
-.header__gamburger, .header__drop-content , .wrapper__col_bord-4, .wrapper__col_bord-3{
+.header__gamburger, .header__drop-content , .wrapper__col_bord-4, .wrapper__col_bord-3, .technologies__toggle{
     display: none;
 }
-@media(max-width: 1000px) {
+
+@media(max-width: 768px) {
     .content{
        width: 300px;
     }
@@ -331,7 +332,7 @@ footer, .footer__underground{
     .header__gamburger{
         margin-left: auto;
     }
-    .wrapper__col_bord-4, .wrapper__col_bord-3{
+    .wrapper__col_bord-4, .wrapper__col_bord-3, .subscribe__table-of-contents{
         flex-direction: column;
     }
     h1{
@@ -339,12 +340,17 @@ footer, .footer__underground{
     }
     .support__text{
         font-size: 16px;
+    }
+    .subscribe__table-of-contents, .support__text{
         margin-bottom: 30px;
     }
-    h4{
+    .subscribe__toc{
+        margin-bottom: 20px;
+    }
+    h4, h2{
         font-size: 18px;
     }
-    .qualities__text, .opportunity__text, .subscribe__time-text{
+    .qualities__text, .opportunity__text, .subscribe__time-text, .subscribe__table-of-contents-text{
         font-size: 16px;
     }
     .technologies, .qualities, .opportunity, .subscribe, .projects{
@@ -362,5 +368,38 @@ footer, .footer__underground{
     }
     .wrapper__col_bord-4{
         grid-row: 7;
+    }
+    .subscribe__quality-text-plus{
+        font-size: 14px;
+    }
+    .wrapper__col_pad{
+        padding-left: 26px;
+        padding-right: 20px;
+    }
+    .wrapper_telephone-size{
+        grid-template-rows: repeat(3, 771px);
+    }
+    .qualities__title{
+        word-break: normal;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .technologies__toggle:not(:checked) ~ .wrapper .wrapper__col:nth-of-type(n+6){
+        display: none;
+    }
+    .technologies__toggle:checked~.technologies__button::before{
+        content: attr(data-text-hide);
+    }
+    .technologies__button::before{
+        content: attr(data-text-show);
+        text-transform: uppercase;
+    }
+    .technologies__button{
+        border: 1px solid #2632384D;
+        width: auto;
+    }
+    .technology__text{
+        font-size: 12px;
     }
  }

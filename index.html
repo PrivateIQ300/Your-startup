@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -165,6 +166,7 @@
         <div class="technologies">
             <div class="content">
                 <h2 class="technologies__table-of-contents">ТЕХНОЛОГИИ</h2>
+                <input class="technologies__toggle d-none" id="more" type="checkbox">
                 <div class="wrapper">
                     <div class="wrapper__col">
                         <div class="technology__technique">
@@ -297,6 +299,7 @@
                         </div>
                     </div>
                 </div>
+                <label class="technologies__button d-inline-block d-md-none" data-text-show="Показать ещё" data-text-hide="Скрыть" for="more"></label>
             </div>
         </div>
         <div class="opportunity">
@@ -473,7 +476,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="wrapper">
+                <div class="wrapper wrapper_telephone-size">
                     <div class="wrapper__col wrapper__col_border wrapper__col_pad">
                         <div class="subscribe__title">
                             <h2 class="">ЛАЙТ</h2>
