@@ -10,14 +10,24 @@
     font-family: 'Proxima Nova';
     font-weight: 400;
 }
+.button{
+    cursor: pointer;
+    display: inline-flex;
+}
 .main{
     max-width: 1440px;
     padding: 0 15px;
 }
-.main, .content, .center{
+.main,
+.content,
+.center{
     margin-left: auto;
 }
-.application__text, .main, .content, .center, .footer__mail-text{
+.application__text,
+.main,
+.content,
+.center,
+.footer__mail-text{
     margin-right: auto;
 }
 
@@ -25,22 +35,55 @@
     max-width: 1280px;
 }
 .header__drop-content{
-    
     position: absolute;
     z-index: 1;
     background-color: #f9f9f9;
     left:33%;
 }
-.header__drop-content, .subscribe__toc{
+.header__drop-content,
+.subscribe__toc{
     white-space: nowrap; 
 }
-.main, .application__row, .footer__contanct, .footer__mail, .footer__underground, .projects__foto,.wrapper__col, .subscribe__quality, .content, .subscribe__table-of-contents, .opportunity__number, .technology__description, .technology__technique, .row, .show, .header__links, .header__dropper:hover .header__drop-content, .support__description{
+.main,
+.application__row,
+.footer__contanct,
+.footer__mail,
+.footer__underground,
+.projects__foto,.wrapper__col,
+.subscribe__quality,
+.content,
+.subscribe__table-of-contents,
+.opportunity__number,
+.technology__description,
+.technology__technique,
+.row,
+.show,
+.header__links,
+.header__dropper:hover .header__drop-content,
+.support__description{
     display: flex;
 }
-.main, .projects__foto, .content, .wrapper__col, .technology__description ,.col, .show, .header__dropper:hover .header__drop-content, .support__description{
+.main,
+.projects__foto,
+.content,
+.wrapper__col,
+.technology__description ,.col,
+.show,
+.header__dropper:hover .header__drop-content,
+.support__description{
     flex-direction: column;
 }
-.row, .application__row, .footer__contanct, .footer__mail, .footer__underground, .subscribe__quality, .header__links, .subscribe__table-of-contents, .opportunity__number, .content_row, .technology__technique{
+.row,
+.application__row,
+.footer__contanct,
+.footer__mail,
+.footer__underground,
+.subscribe__quality,
+.header__links,
+.subscribe__table-of-contents,
+.opportunity__number,
+.content_row,
+.technology__technique{
     flex-direction: row;
 }
 .content_border{
@@ -50,7 +93,8 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.header__button, .support__button{
+.header__button,
+.support__button{
     background-color: #5D5FEF;
     color:white;
     width: 230px;
@@ -62,20 +106,36 @@
     margin-left: auto;
     margin-right: 40px;
 }
-.footer__list li, .header__link, .header__drop-btn, .footer__company, .footer__year, .footer__phone, .footer__mail-text{
+.footer__list li,
+.header__link,
+.header__drop-btn,
+.footer__company,
+.footer__year,
+.footer__phone,
+.footer__mail-text{
     line-height: 17px;
     font-size: 14px;
 }
-.header__link, .header__drop-btn{
+.header__link,
+.header__drop-btn{
     margin-left: 40px;
 }
-.content_vert-cent, .opportunity__number, .projects__foto, .application__row, .footer__underground, .footer__mail, .footer__contanct{
+.content_vert-cent,
+.opportunity__number,
+.projects__foto,
+.application__row,
+.footer__underground,
+.footer__mail,
+.footer__contanct,
+.button{
     align-items: center;
 }
-.header__text-phone, .projects__button-more{
+.header__text-phone,
+.projects__button-more{
     font-size:20px;
 }
-.blue-color-text, .opportunity__number-text{
+.blue-color-text,
+.opportunity__number-text{
     color:#5457F5;
 }
 .header__dropper{
@@ -103,32 +163,41 @@ h1{
 .support{
     margin-top: 40px;
 }
-.qualities__description, .subscribe__title{
+.qualities__description,
+.subscribe__title{
     margin-bottom: 10px;
 } 
 .qualities__title{
     word-break: break-all;
 }
-.subscribe__quality, .support__contents{
+.subscribe__quality,
+.support__contents{
     margin-bottom: 20px;
 }
 .support__contents{
     margin-top: 55px;
 }
 .wrapper{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,
+1fr);
     grid-auto-rows: auto;
     grid-row-gap:50px;
     gap:20px;
 }
-.wrapper, .wrapper_second-row, .footer__wrapper{
+.wrapper,
+.wrapper_second-row,
+.footer__wrapper{
     display: grid;
 }
 h4{
     font-size: 24px;
     
 }
-h2, h4, h3, .subscribe__price-text, .projects__button-more{
+h2,
+h4,
+h3,
+.subscribe__price-text,
+.projects__button-more{
     font-weight: 600;
 }
 h2{
@@ -137,41 +206,56 @@ h2{
 h3{
     font-size: 30px;
 }
-.qualities__text, .opportunity__text, .subscribe__time-text{
+.qualities__text,
+.opportunity__text,
+.subscribe__time-text{
     font-size: 22px;
 }
-.subscribe__time-text, .subscribe__quality-text-plus{
+.subscribe__time-text,
+.subscribe__quality-text-plus{
     color: #263238;
 }
-.subscribe__quality-text-minus, .footer__mail-text, .footer__phone{
+.subscribe__quality-text-minus,
+.footer__mail-text,
+.footer__phone{
     color: #A8ADAF;
 }
-.support__text, .qualities__text, .opportunity__text, .header__link, .header__drop-btn, .technology__text{
+.support__text,
+.qualities__text,
+.opportunity__text,
+.header__link,
+.header__drop-btn,
+.technology__text{
     color: #676F73;
 }
-.qualities__image, .qualities__title, .qualities__description, .wrapper_margin-top, .opportunity__text{
+.qualities__image,
+.qualities__title,
+.qualities__description,
+.wrapper_margin-top,
+.opportunity__text{
     margin-top: 20px;
 }
 .wrapper__col_border-b-r{
     border-right: 1px solid #263238;
 }
-.wrapper__col_border-b, .wrapper__col_border-b-r{
+.wrapper__col_border-b,
+.wrapper__col_border-b-r{
     border-bottom: 1px solid #263238;
 }
-.wrapper__col, .technology__techniqueб .projects__button{
+.wrapper__col,
+.technology__techniqueб .projects__button{
     padding-right: 20px;
 }
-.wrapper_second-row{
-    grid-template-columns: 9.8fr 10fr 10.5fr;
-    gap:40px;
-}
-.wrapper__col_border-b, .wrapper__col_border-b-r{
+.wrapper__col_border-b,
+.wrapper__col_border-b-r{
     padding-bottom: 20px;
 }
 .technology__text{
     font-size: 16px;
 }
-.projects__foto, .technology__description{
+.projects__foto,
+.technology__description,
+.button{
     justify-content: center;
 }
 .technology__description{
@@ -184,10 +268,18 @@ h3{
 .technology__technique:hover img{
     filter:grayscale(0%);
 }
-.technology__technique, .technologies__table-of-contents, .opportunity__table-of-contents, .subscribe__table-of-contents, .projects__table-of-contents{
+.technology__technique,
+.technologies__table-of-contents,
+.opportunity__table-of-contents,
+.subscribe__table-of-contents,
+.projects__table-of-contents{
     margin-bottom: 50px;
 }
-.technologies, .qualities, .opportunity, .subscribe, .projects{
+.technologies,
+.qualities,
+.opportunity,
+.subscribe,
+.projects{
     margin-top: 180px;
 }
 .opportunity__number-text{
@@ -196,20 +288,25 @@ h3{
 .opportunity__border{
     border-top: 2px solid #5457F5;
 }
-.opportunity__border, .footer__underground{
+.opportunity__border,
+.footer__underground{
     width: 100%;    
 }
 .subscribe__quality_border{
     border-top: 1px solid #BABDBF;
     margin-left: 20px;
 }
-.opportunity__number-text, .subscribe__quality_border, .wrapper__col_border-top, .footer__contact{
+.opportunity__number-text,
+.subscribe__quality_border,
+.wrapper__col_border-top,
+.footer__contact{
     margin-right: 20px;
 }
 .wrapper__border_without-margin{
     margin-right: 0px; 
 }
-.subscribe__table-of-contents-text, .projects__title{
+.subscribe__table-of-contents-text,
+.projects__title{
     font-size: 28px;
 }
 .subscribe__toc{
@@ -218,21 +315,26 @@ h3{
 .wrapper__col_border{
     border: 1px solid #263238;
 }
-.footer__title-text, .subscribe__quality-text-plus, .subscribe__quality-text-minus{
+.footer__title-text,
+.subscribe__quality-text-plus,
+.subscribe__quality-text-minus{
     font-size: 18px;
 }
-.subscribe__quality-text-plus, .subscribe__quality-text-minus{
+.subscribe__quality-text-plus,
+.subscribe__quality-text-minus{
     margin-left: 30px;
     line-height: 19px;
     margin-top: 2px;
 }
-.subscribe__price, .footer__underground{
+.subscribe__price,
+.footer__underground{
     border-top: 1px solid #A8ADAF;
 }
 .subscribe__price-text{
     font-size: 50px; 
 }
-.subscribe__price, .footer__underground{
+.subscribe__price,
+.footer__underground{
     padding-top: 20px;
 }
 .wrapper__col_pad{
@@ -250,16 +352,15 @@ h3{
 .subscribe__price-text_blue-color{
     color: #5759F3;
 }
-.wrapper__col_border-top, .subscribe__price_bord-black{
+.wrapper__col_border-top,
+.subscribe__price_bord-black{
     border-top: 1px solid #263238;
 }
 .projects__button{
     border-radius: 5px;
-    padding-left: 20px;
+    padding: 5px 20px;
     border: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 15;
+    font-size: 15px;
 }
 .wrapper__col_pad-20px{
     padding: 15px;
@@ -267,7 +368,8 @@ h3{
 .projects__foto{
     height: 100%;
 }
-.projects__button-more, .header__drop-btn{
+.projects__button-more,
+.header__drop-btn{
     background: none;
 }
 .projects__button-more{
@@ -296,7 +398,8 @@ footer{
     margin-right: 50px;
     margin-left: 50px;
 }
-footer, .footer__underground{
+footer,
+.footer__underground{
     margin-top: 50px;
 }
 .footer__wrapper{
@@ -309,10 +412,16 @@ footer, .footer__underground{
 .footer__list{
     margin-top: 21px;
 }
-.footer__company, .footer__year, .footer__phone{
+.footer__company,
+.footer__year,
+.footer__phone{
     margin-right: 60px;
 }
-.header__gamburger, .header__drop-content , .wrapper__col_bord-4, .wrapper__col_bord-3, .technologies__toggle{
+.header__gamburger,
+.header__drop-content ,
+.wrapper__col_bord-4,
+.wrapper__col_bord-3,
+.technologies__toggle{
     display: none;
 }
 
@@ -323,16 +432,24 @@ footer, .footer__underground{
     .wrapper{
         grid-template-columns: 1fr;
     }
-    .header__links, .header__phone, .header__button, .support__image, .wrapper__border_without-margin{
+    .header__links,
+.header__phone,
+.header__button,
+.support__image,
+.wrapper__border_without-margin{
         display: none;
     }
-    .header__gamburger, .wrapper__col_bord-4, .wrapper__col_bord-3{
+    .header__gamburger,
+.wrapper__col_bord-4,
+.wrapper__col_bord-3{
         display: flex;
     }
     .header__gamburger{
         margin-left: auto;
     }
-    .wrapper__col_bord-4, .wrapper__col_bord-3, .subscribe__table-of-contents{
+    .wrapper__col_bord-4,
+.wrapper__col_bord-3,
+.subscribe__table-of-contents{
         flex-direction: column;
     }
     h1{
@@ -341,22 +458,32 @@ footer, .footer__underground{
     .support__text{
         font-size: 16px;
     }
-    .subscribe__table-of-contents, .support__text{
+    .subscribe__table-of-contents,
+.support__text{
         margin-bottom: 30px;
     }
     .subscribe__toc{
         margin-bottom: 20px;
     }
-    h4, h2{
+    h4,
+h2{
         font-size: 18px;
     }
-    .qualities__text, .opportunity__text, .subscribe__time-text, .subscribe__table-of-contents-text{
+    .qualities__text,
+.opportunity__text,
+.subscribe__time-text,
+.subscribe__table-of-contents-text{
         font-size: 16px;
     }
-    .technologies, .qualities, .opportunity, .subscribe, .projects{
+    .technologies,
+.qualities,
+.opportunity,
+.subscribe,
+.projects{
         margin-top: 100px;
     }
-    .wrapper__col_border-b-r, .wrapper__col_border-b{
+    .wrapper__col_border-b-r,
+.wrapper__col_border-b{
         border-bottom: none;
         border-right: 1px solid #263238;
     }
@@ -377,13 +504,17 @@ footer, .footer__underground{
         padding-right: 20px;
     }
     .wrapper_telephone-size{
-        grid-template-rows: repeat(3, 771px);
+        grid-template-rows: repeat(3,771px);
     }
     .qualities__title{
         word-break: normal;
     }
     h3{
         font-size: 20px;
+    }
+    .technologies__button{
+        padding: 14px 32px;
+        align-self:flex-start;
     }
     .technologies__toggle:not(:checked) ~ .wrapper .wrapper__col:nth-of-type(n+6){
         display: none;
