@@ -14,6 +14,9 @@
     cursor: pointer;
     display: inline-flex;
 }
+img {
+    max-width: 100%;
+}
 .main{
     max-width: 1440px;
     padding: 0 15px;
@@ -427,30 +430,35 @@ footer,
 }
 
 @media(max-width: 768px) {
-    .content{
+    .content, .footer__wrapper{
        width: 300px;
+       margin-left: auto;
+       margin-right: auto;
     }
-    .wrapper{
+    .wrapper, .footer__wrapper{
         grid-template-columns: 300px;
     }
+    .projects__wrapper{
+        grid-auto-rows: 250px;
+    }
     .header__links,
-.header__phone,
-.header__button,
-.support__image,
-.wrapper__border_without-margin{
+    .header__phone,
+    .header__button,
+    .support__image,
+    .wrapper__border_without-margin{
         display: none;
     }
     .header__gamburger,
-.wrapper__col_bord-4,
-.wrapper__col_bord-3{
+    .wrapper__col_bord-4,
+    .wrapper__col_bord-3{
         display: flex;
     }
     .header__gamburger{
         margin-left: auto;
     }
     .wrapper__col_bord-4,
-.wrapper__col_bord-3,
-.subscribe__table-of-contents{
+    .wrapper__col_bord-3,
+    .subscribe__table-of-contents{
         flex-direction: column;
     }
     h1{
@@ -460,31 +468,31 @@ footer,
         font-size: 16px;
     }
     .subscribe__table-of-contents,
-.support__text{
+    .support__text{
         margin-bottom: 30px;
     }
     .subscribe__toc{
         margin-bottom: 20px;
     }
     h4,
-h2{
+    h2{
         font-size: 18px;
     }
     .qualities__text,
-.opportunity__text,
-.subscribe__time-text,
-.subscribe__table-of-contents-text{
+    .opportunity__text,
+    .subscribe__time-text,
+    .subscribe__table-of-contents-text{
         font-size: 16px;
     }
     .technologies,
-.qualities,
-.opportunity,
-.subscribe,
-.projects{
+    .qualities,
+    .opportunity,
+    .subscribe,
+    .projects{
         margin-top: 100px;
     }
     .wrapper__col_border-b-r,
-.wrapper__col_border-b{
+    .wrapper__col_border-b{
         border-bottom: none;
         border-right: 1px solid #263238;
     }
@@ -537,4 +545,25 @@ h2{
     .subscribe__price-text{
         font-size: 30px;
     }
- }
+    .projects__bear{
+        width: 158px;
+    }
+    .projects__button, .projects__button-more{
+        font-size: 10px;
+    }
+    .projects__button{
+        padding: 4px 19px;
+    }
+    .projects__button-more{
+        border: 1px solid #2632384D;
+        padding: 14px 32px;
+    }
+    .center{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .application__row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
