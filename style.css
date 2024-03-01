@@ -60,7 +60,8 @@
 .show,
 .header__links,
 .header__dropper:hover .header__drop-content,
-.support__description{
+.support__description,
+.content__border{
     display: flex;
 }
 .main,
@@ -70,7 +71,8 @@
 .technology__description ,.col,
 .show,
 .header__dropper:hover .header__drop-content,
-.support__description{
+.support__description, 
+.content__border{
     flex-direction: column;
 }
 .row,
@@ -312,8 +314,10 @@ h3{
 .subscribe__toc{
     margin-right: 250px;
 }
-.wrapper__col_border{
+.content__border, .wrapper__col_border{
     border: 1px solid #263238;
+    padding: 15px;
+    height: 100%;
 }
 .footer__title-text,
 .subscribe__quality-text-plus,
@@ -361,9 +365,6 @@ h3{
     padding: 5px 20px;
     border: none;
     font-size: 15px;
-}
-.wrapper__col_pad-20px{
-    padding: 15px;
 }
 .projects__foto{
     height: 100%;
@@ -430,7 +431,7 @@ footer,
        width: 300px;
     }
     .wrapper{
-        grid-template-columns: 1fr;
+        grid-template-columns: 300px;
     }
     .header__links,
 .header__phone,
@@ -532,5 +533,8 @@ h2{
     }
     .technology__text{
         font-size: 12px;
+    }
+    .subscribe__price-text{
+        font-size: 30px;
     }
  }
