@@ -64,7 +64,8 @@ img {
 .header__links,
 .header__dropper:hover .header__drop-content,
 .support__description,
-.content__border{
+.content__border,
+.opportunity__description{
     display: flex;
 }
 .main,
@@ -75,7 +76,8 @@ img {
 .show,
 .header__dropper:hover .header__drop-content,
 .support__description, 
-.content__border{
+.content__border,
+.opportunity__description{
     flex-direction: column;
 }
 .row,
@@ -272,6 +274,9 @@ h3{
 }
 .technology__technique:hover img{
     filter:grayscale(0%);
+}
+.plus{
+    min-width: 24px;
 }
 .technology__technique,
 .technologies__table-of-contents,
@@ -519,8 +524,14 @@ footer,
     .qualities__title{
         word-break: normal;
     }
-    h3{
+    h3, .opportunity__number-text{
         font-size: 20px;
+    }
+    .opportunity__number-text{
+        margin-right: 14px;
+    }
+    .opportunity__main{
+        margin-top: 15px;
     }
     .technologies__button{
         padding: 14px 32px;
@@ -567,16 +578,31 @@ footer,
         margin-left: 0px;
         margin-right: 0px;
     }
-    .opportunity__text{
+    .opportunity__text {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
         overflow: hidden;
+        position: relative;
     }
-    .opportunity__text::after{
-        position: absolute;
+    .opportunity__text::after {
         content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        background: linear-gradient(rgba(255,255,255,0), white);
         z-index: 1;
-        box-shadow: 10px 10px 10px 10px white;
+    }
+    .opportunity__button{
+        margin-left: auto;
+    }
+    .opportunity__toggle:checked ~ .opportunity__text{
+        -webkit-line-clamp:unset;
+    }
+    .opportunity__toggle:checked ~ .opportunity__text::after{
+        -webkit-line-clamp:unset;
+        height: 0px;
     }
 }
