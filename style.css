@@ -429,6 +429,7 @@ footer,
     display: none;
 }
 
+
 @media(max-width: 768px) {
     .content, .footer__wrapper{
        width: 300px;
@@ -565,5 +566,17 @@ footer,
     .application__row{
         margin-left: 0px;
         margin-right: 0px;
+    }
+    .opportunity__text{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+    .opportunity__text::after{
+        position: absolute;
+        content: "";
+        z-index: 1;
+        box-shadow: 10px 10px 10px 10px white;
     }
 }
